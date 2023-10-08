@@ -1,0 +1,18 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  uni-app-fetch:
+    specifier: ^0.0.3
+    version: registry.npmmirror.com/uni-app-fetch@0.0.3
+
+packages:
+
+  registry.npmmirror.com/uni-app-fetch@0.0.3:
+    resolution: {integrity: sha512-uIdxsMDApujqU8Zr8eYgnru+Lb7Y6F6MbpnIkKHHvnISRUCukV5LQuPWnH7vtqD+BoqpAEhi3l7gCLfv/ouqrg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uni-app-fetch/-/uni-app-fetch-0.0.3.tgz}
+    name: uni-app-fetch
+    version: 0.0.3
+    dev: false
