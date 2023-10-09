@@ -1,26 +1,27 @@
-/*#主色*/
+/* 主色 */
 $uni-main-color: #ef4f3f;
-/*#辅助色*/
-/*#成功色*/
-$uni-success:#27BA9B
-/*#警示色*/
-$uni-success:#E19A30
-/*#报错色*/
-$uni-success:#FF4C4C
 
-/*#中性色*/
-/*#主要文字*/
-$uni-main-text-color:#2A2929
-/*#次要文字*/
-$uni-text-color:#818181
-/*#占位文字*/
-$uni-placeholder-text-color:#C2C1C1
-/*#表单边框色*/
-$uni-from-border-color:#D9D9D9
-/*#分隔区域边框色*/
-$uni-divider-color:#EEEEEE
-/*#背景色*/
-$uni-bg-color:#F4F4F4
+/* 辅助色 */
+// 成功色
+$uni-success: #27ba9b;
+// 警示色
+$uni-warning: #e19a30;
+// 报错色
+$uni-danger: #ff4c4c;
+
+/* 中性色 */
+// 主要文字
+$uni-main-text-color: #2a2929;
+// 次要文字
+$uni-secondary-text-color: #818181;
+// 占位文字
+$uni-placeholder-text-color: #c2c1c1;
+// 表单边框色
+$uni-form-border-color: #d9d9d9;
+// 分隔区域边框色
+$uni-divider-color: #eeeeee;
+// 背景色
+$uni-bg-color: #f4f4f4;
 // 中性色-黑色
 $uni-black-color: #000000;
 // 中性色-白色
