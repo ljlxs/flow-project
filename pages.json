@@ -28,7 +28,8 @@
 			"path": "pages/task/index",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -41,7 +42,7 @@
 		{
 			"path": "pages/message/index",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "消息",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -73,8 +74,63 @@
 				"style": {
 					"navigationBarTitleText": "系统设置"
 				}
+			},
+			{
+				"path": "upMobile/index",
+				"style": {
+					"navigationBarTitleText": "换绑手机"
+				}
 			}
 		]
+	}, {
+		"root": "subpkg_message",
+		"pages": [{
+			"path": "content/index",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}]
+	}, {
+		"root": "subpkg_task",
+		"pages": [{
+			"path": "pickup/index",
+			"style": {
+				"navigationBarTitleText": "提货信息 "
+			}
+		}, {
+			"path": "detail/index",
+			"style": {
+				"navigationBarTitleText": "任务详情 ",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "取消任务",
+							"fontSize": "28rpx"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "delay/index",
+			"style": {
+				"navigationBarTitleText": "延迟收货 "
+			}
+		}, {
+			"path": "except/index",
+			"style": {
+				"navigationBarTitleText": "异常上报 "
+			}
+		}, {
+			"path": "delivery/index",
+			"style": {
+				"navigationBarTitleText": "支付 "
+			}
+		}, {
+			"path": "record/index",
+			"style": {
+				"navigationBarTitleText": "回车登记"
+			}
+		}]
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

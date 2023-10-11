@@ -20,11 +20,11 @@ onMounted(() => {
 			</swiper-item>
 		</swiper>
 		<uni-list class="list" :border="false">
-			<uni-list-item :border="false" title="车辆编号" :rightText="TruckList.id"></uni-list-item>
-			<uni-list-item :border="false" title="车辆号牌" :rightText="TruckList.licensePlate"></uni-list-item>
-			<uni-list-item :border="false" title="车型" :rightText="TruckList.truckType"></uni-list-item>
-			<uni-list-item :border="false" title="所属机构" :rightText="TruckList.currentOrganName"></uni-list-item>
-			<uni-list-item :border="false" title="载重" :rightText="TruckList.allowableLoad"></uni-list-item>
+			<uni-list-item :border="false" title="车辆编号" :rightText="TruckList?.id"></uni-list-item>
+			<uni-list-item :border="false" title="车辆号牌" :rightText="TruckList?.licensePlate"></uni-list-item>
+			<uni-list-item :border="false" title="车型" :rightText="TruckList?.truckType"></uni-list-item>
+			<uni-list-item :border="false" title="所属机构" :rightText="TruckList?.currentOrganName"></uni-list-item>
+			<uni-list-item :border="false" title="载重" :rightText="TruckList?.allowableLoad"></uni-list-item>
 		</uni-list>
 	</view>
 </template>

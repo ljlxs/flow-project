@@ -1,0 +1,48 @@
+.announce {
+	.announce-top {
+		color: $uni-secondary-text-color;
+		font-size: 28rpx;
+		padding: 30rpx 44rpx 30rpx;
+	}
+	.dot {
+		width: 16rpx;
+		height: 16rpx;
+		background-color: $uni-main-color;
+		border-radius: 50%;
+		display: block;
+		align-self: center;
+		margin-right: 12rpx;
+	}
+	::v-deep .uni-list {
+		margin: 0 30rpx;
+		border-radius: 16rpx;
+		margin-bottom: 30rpx;
+		overflow: hidden;
+	}
+
+	::v-deep .uni-list-item__content-title {
+		font-size: 30rpx !important;
+		padding-left: 20rpx;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	::v-deep .uni-list-item__extra-text {
+		font-size: 28rpx !important;
+		color: $uni-secondary-text-color !important;
+	}
+}
+
+.message-blank {
+	width: 400rpx;
+	height: 240rpx;
+	background: url(https://sl-driver.oss-cn-hangzhou.aliyuncs.com/images/blank%402x.png);
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 464rpx;
+}
+.scroll-view {
+	height: 100%;
+	overflow: hidden;
+}
