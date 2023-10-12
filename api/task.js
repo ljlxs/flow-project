@@ -11,3 +11,11 @@ export const getTasksDetails = (jobId) => {
 export const getTasksDelay = (data) => {
 	return uniFetch.put('/driver/tasks/delay', data);
 };
+// 提货
+export const getTasksDeliver = (data) => {
+	return uniFetch.post('/driver/tasks/takeDelivery', data);
+};
+// 交付
+export const getDeliver = (data) => {
+	return uniFetch.post('/driver/tasks/deliver', data);
+};

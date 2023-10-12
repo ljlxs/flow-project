@@ -23,7 +23,7 @@ onLoad((e) => {
 });
 const bindTimeChange = (e) => {
 	const [date] = planDepartureTime.value.split(' ');
-	PickerValue.value = `${date} ${e.detail.value}` + ':00';
+	PickerValue.value = `${date} ${e.detail.value}`;
 };
 
 // 1. 选择的时间不能小于原定时间
@@ -33,7 +33,6 @@ const trimeFlag = computed(() => {
 	const start = new Date(planDepartureTime.value).getTime();
 	// 选择的时间
 	const end = new Date(PickerValue.value).getTime();
-	console.log(112123123, end - start < 7200 * 1000);
 	return end - start > 0 && end - start < 7200 * 1000;
 });
 // 按钮形状
@@ -45,11 +44,11 @@ const btnAdd = async () => {
 	try {
 		const data = {
 			id: routeId.value,
-			delayTime: planDepartureTime.value,
+			delayTime: PickerValue.value,
 			delayReason: textareaText.value
 		};
-		console.log(data);
 		const res = await getTasksDelay(data);
+		console.log(res);
 		// 跳转到任务列表
 		uni.reLaunch({ url: '/pages/task/index' });
 	} catch (e) {
@@ -67,7 +66,7 @@ const btnAdd = async () => {
 					<template v-slot:footer>
 						<picker mode="time" :value="PickerChange" @change="bindTimeChange">
 							<view v-if="!PickerValue" class="footerText">不可超过2个小时</view>
-							<view :class="{ error: !trimeFlag }" v-else class="footerText">{{ PickerValue }}</view>
+							<view :class="{ error: !trimeFlag }" v-else class="footerText">{{ PickerValue + ':00' }}</view>
 						</picker>
 					</template>
 				</uni-list-item>

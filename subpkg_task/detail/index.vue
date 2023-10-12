@@ -10,7 +10,6 @@ const TasksDetails = async (id) => {
 	detailsList.value = res.data;
 };
 onLoad((e) => {
-	console.log(e);
 	TasksDetails(e.id);
 });
 const flag = ref(false);
@@ -48,7 +47,8 @@ const flag = ref(false);
 			</view>
 		</view>
 		<view class="page-bom">
-			<view class="bom-item" :class="flWidth">
+			<!-- :class="flWidth" -->
+			<view class="bom-item">
 				<view class="top">
 					<text>车辆司机信息</text>
 					<image @click="flag = true" src="@/static/btn_zhankai.png" mode=""></image>
@@ -69,11 +69,11 @@ const flag = ref(false);
 		</view>
 		<view class="flex-btn" v-if="detailsList.status === 1">
 			<navigator :url="`/subpkg_task/delay/index?id=${detailsList.id}&planDepartureTime=${detailsList.planDepartureTime}`" hover-class="none" class="flex-left">延迟收货</navigator>
-			<navigator :url="`/subpkg_task/pickups/index`" hover-class="none" class="flex-rig disabled">提货</navigator>
+			<navigator :url="`/subpkg_task/pickup/index?id=${detailsList.id}`" hover-class="none" class="flex-rig">提货</navigator>
 		</view>
 		<view class="flex-btn" v-if="detailsList.status === 2">
 			<navigator :url="`/subpkg_task/except/index`" hover-class="none" class="flex-left">异常上报</navigator>
-			<navigator :url="`/subpkg_task/delivery/index`" hover-class="none" class="flex-rig disabled">支付</navigator>
+			<navigator :url="`/subpkg_task/delivery/index`" hover-class="none" class="flex-rig disabled">交付</navigator>
 		</view>
 		<view class="flex-btn" v-if="detailsList.status === 4">
 			<navigator :url="`/subpkg_task/record/index`" hover-class="none" class="flex-left">回车登记</navigator>
